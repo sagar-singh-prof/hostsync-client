@@ -25,3 +25,16 @@ main {
     flex: 1;
     padding: 24px;
 }
+
+.nav-link {
+    color: black;
+
+
+    /* normal link */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: blueviolet;
+    /* active link */
+}

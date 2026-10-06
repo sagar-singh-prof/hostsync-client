@@ -1,21 +1,31 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Sidebar from './components/Sidebar'
+import Layout from './components/Layout'
+import Dashboard from './pages/Dashboard'
+import Inventory from './pages/Inventory'
+import Stores from './pages/Stores'
+import Products from './pages/Products'
+import Sync from './pages/Sync'
 
 function App() {
 
     return (
         <>
-            <Header />
+            <BrowserRouter>
+                <Routes>
+                    <Route element={<Layout />} path='/'>
+                        <Route element={<Dashboard />} path='dashboard' />
+                        <Route element={<Inventory />} path='inventory' />
+                        <Route element={<Stores />} path='stores' />
+                        <Route element={<Products />} path='products' />
+                        <Route element={<Sync />} path='sync' />
 
-            <div className='parent'>
-                <Sidebar />
-                <main>
-                    <h2>Dashboard</h2>
-                    <p>Welcome to Multi-Store Sync.</p>
-                </main>
-            </div>
+
+
+                    </Route>
+                </Routes>
+            </BrowserRouter>
         </>
 
     )
