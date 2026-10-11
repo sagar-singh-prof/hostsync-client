@@ -8,10 +8,10 @@ export default function Sidebar() {
             <nav>
                 <ul>
                     <li><NavLink to="/dashboard" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Dashboard</NavLink>  </li>
-                    <li><NavLink to="/stores" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Stores</NavLink> </li>
-                    <li><NavLink to="/products" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Products</NavLink></li>
-                    <li><NavLink to="/inventory" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Inventory</NavLink></li>
-                    <li><NavLink to="/sync" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Sync</NavLink></li>
+                    <li><NavLink to="/channels" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Booking Channels</NavLink> </li>
+                    <li><NavLink to="/rooms" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Room Types</NavLink></li>
+                    <li><NavLink to="/availability" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Availablity</NavLink></li>
+                    <li><NavLink to="/sync" className={({isActive})=>isActive?"nav-link active":"nav-link"}>Booking Sync</NavLink></li>
                 </ul>
             </nav>
         </aside>

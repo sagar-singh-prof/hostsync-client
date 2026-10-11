@@ -1,40 +1,77 @@
 header {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 1px solid #ddd;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 main {
-    padding: 24px;
+  padding: 24px;
 }
-.sidebar{
-    width: 220px;
+.sidebar {
+  width: 220px;
 }
 
-.parent{
-    display: flex;
+.parent {
+  display: flex;
 }
 main {
-    flex: 1;
-    padding: 24px;
+  flex: 1;
+  padding: 24px;
 }
 
 .nav-link {
-    color: black;
+  color: black;
 
-
-    /* normal link */
+  /* normal link */
 }
 
 .nav-link.active {
-    font-weight: bold;
-    color: blueviolet;
-    /* active link */
+  font-weight: bold;
+  color: blueviolet;
+  /* active link */
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+@media (max-width: 1000px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 12px;
 }

@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
-import Inventory from './pages/Inventory'
-import Stores from './pages/Stores'
-import Products from './pages/Products'
-import Sync from './pages/Sync'
+import BookingChannels from './pages/BookingChannels'
+import RoomTypes from './pages/RoomTypes'
+import Availability from './pages/Availability'
+import BookingSync from './pages/BookingSync'
 
 function App() {
 
@@ -16,10 +16,10 @@ function App() {
                 <Routes>
                     <Route element={<Layout />} path='/'>
                         <Route element={<Dashboard />} path='dashboard' />
-                        <Route element={<Inventory />} path='inventory' />
-                        <Route element={<Stores />} path='stores' />
-                        <Route element={<Products />} path='products' />
-                        <Route element={<Sync />} path='sync' />
+                        <Route element={<Availability />} path='availability' />
+                        <Route element={<BookingChannels />} path='channels' />
+                        <Route element={<RoomTypes />} path='rooms' />
+                        <Route element={<BookingSync />} path='sync' />
 
 
 

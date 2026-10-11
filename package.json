@@ -1,5 +1,5 @@
 {
-  "name": "storesync-client",
+  "name": "hostsync-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",

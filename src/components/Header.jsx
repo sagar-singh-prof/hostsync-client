@@ -1,10 +1,10 @@
 export default function Header() {
     return (
         <header>
-            <h1>Multi-Store Sync</h1>
+            <h1>HostSync</h1>
 
             <div>
-                <span>Welcome, Sagar</span>
+                <span>Welcome, to HostSync</span>
             </div>
         </header>
     );
