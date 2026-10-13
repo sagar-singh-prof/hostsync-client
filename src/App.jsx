@@ -1,8 +1,8 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Layout from './components/Layout'
-import Dashboard from './pages/Dashboard'
+import Layout from './components/layout/Layout'
+import Dashboard from './pages/dashboard/Dashboard'
 import BookingChannels from './pages/BookingChannels'
 import RoomTypes from './pages/RoomTypes'
 import Availability from './pages/Availability'

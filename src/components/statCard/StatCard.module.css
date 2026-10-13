@@ -1,0 +1,19 @@
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 12px;
+}
